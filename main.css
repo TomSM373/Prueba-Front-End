@@ -1,0 +1,184 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-color: rgba(114, 89, 255, 0.2);
+}
+
+.logo {
+
+    height: 100px;
+    width: 100px;
+    margin-left: 80px;
+
+}
+
+nav ul li a:hover {
+
+    background-color: white;
+    color: rebeccapurple;
+    border: solid;
+    cursor: pointer;
+    
+}
+
+.menuButton {
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    
+}
+
+#check {
+    display: none;
+}
+
+nav {
+
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100px;
+    
+
+}
+
+nav ul li a {
+
+    color: white;
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+li {
+
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+nav ul {
+
+    float: right;
+    margin-right: 10%;
+}
+
+.Titulo {
+
+    color: green;
+    font-size: 40px;
+    text-decoration: none;
+
+
+}
+
+.Subtitulo {
+
+    text-decoration: none;
+    color: gold;
+    font-size: 20px;
+
+}
+
+.Subtitulo:hover {
+
+    color: blue;
+    font-size: 24px;
+}
+
+.Titulo:hover {
+
+    color: red;
+    font-size: 44px;
+
+}
+
+.boton {
+
+    border: solid;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 20px;
+    border-color: rebeccapurple;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 10px;
+
+}
+
+
+.boton:hover {
+
+    opacity: 80%;
+}
+
+.DEC_Titulo {
+
+    text-align: center;
+    padding: 30px;
+}
+
+.DEC_STitulo {
+
+    text-align: center;
+}
+
+.DEC_Parrafo {
+
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.DEC_boton {
+
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media (max-width: 650px) {
+    ul {
+        opacity: 0.8;
+        background: rebeccapurple;
+        position: fixed;
+        top: 50px;
+        width: 40%;
+        height: 80%;
+        text-align: center;
+        display: flex;
+
+
+    }
+
+
+    nav ul li {
+        display: block;
+        border-bottom: 2px solid white;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li:hover {
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    a:hover {
+        background-color: inherit;
+    }
+
+    .menuButton {
+        display: inline;
+    }
+
+    #check:checked ~ ul {
+        left: -400px;
+    }
+
+}
